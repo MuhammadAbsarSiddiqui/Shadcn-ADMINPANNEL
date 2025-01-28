@@ -56,7 +56,7 @@ import {
   
   export function TableDemo() {
     return (
-      <Table className= "w-full">
+      <Table>
         <TableCaption>A list of your recent invoices.</TableCaption>
         <TableHeader>
           <TableRow>

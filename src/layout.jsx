@@ -8,6 +8,7 @@ export default function Layout({ children }) {
       <AppSidebar />
       <main>
         <SidebarTrigger />
+        {children}
         <Outlet />
       </main>
     </SidebarProvider>

@@ -10,32 +10,33 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import { Link } from "react-router-dom"
 
 // Menu items.
 const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     icon: Home,
   },
   {
     title: "Inbox",
-    url: "#TableDemo",
+    url: "/table-demo",
     icon: Inbox,
   },
   {
-    title: "Calendar",
-    url: "#",
+    title: "component",
+    url: "/component",
     icon: Calendar,
   },
   {
     title: "Search",
-    url: "#",
+    url: "/",
     icon: Search,
   },
   {
     title: "Settings",
-    url: "#",
+    url: "/",
     icon: Settings,
   },
 ]
@@ -51,10 +52,10 @@ export function AppSidebar() {
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url}>
+                    <Link to={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
