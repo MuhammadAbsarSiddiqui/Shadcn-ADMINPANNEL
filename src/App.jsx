@@ -7,9 +7,9 @@ import { Component } from './components/Component';
 // Define router outside of the component
 const router = createBrowserRouter([
   {
-    path: "/", // Use : instead of =
-    element: <Layout><Outlet /></Layout>, // Use : instead of =
-    children: [ // Use : and add missing =
+    path: "/", 
+    element: <Layout />, // Use : instead of =
+    children: [ 
       { path: "/component", element: <Component /> },
       { path: "/table-demo", element: <TableDemo /> },
     ]
