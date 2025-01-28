@@ -3,6 +3,7 @@ import './App.css'
 import Layout from './layout'
 import { TableDemo } from './components/TableDemo'
 import { Component } from './components/Component';
+import { CardWithForm } from "./components/CardWithForm";
 
 // Define router outside of the component
 const router = createBrowserRouter([
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
     children: [ 
       { path: "/component", element: <Component /> },
       { path: "/table-demo", element: <TableDemo /> },
+      { path: "/cardwithform", element: <CardWithForm /> },
     ]
   }
 ]);

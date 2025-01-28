@@ -20,6 +20,11 @@ const items = [
     icon: Home,
   },
   {
+    title: "About",
+    url: "/",
+    icon: Home,
+  },
+  {
     title: "Inbox",
     url: "/table-demo",
     icon: Inbox,
@@ -35,8 +40,8 @@ const items = [
     icon: Search,
   },
   {
-    title: "Settings",
-    url: "/",
+    title: "CARDS",
+    url: "/cardwithform",
     icon: Settings,
   },
 ]
@@ -46,15 +51,15 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
+          <SidebarGroupLabel>My Pannel</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <Link to={item.url}>
+                    <Link to={item.url} className="text-black">
                       <item.icon />
-                      <span>{item.title}</span>
+                      <span >{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
