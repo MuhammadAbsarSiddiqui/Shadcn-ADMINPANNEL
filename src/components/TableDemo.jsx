@@ -40,7 +40,7 @@ import {
         {loading ? (
         <div>Loading...</div>
       ) : (
-      <Table>
+      <Table className="bg-zinc-300">
         <TableCaption>A list of your recent customer</TableCaption>
         <TableHeader>
           <TableRow>

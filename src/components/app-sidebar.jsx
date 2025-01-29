@@ -12,11 +12,11 @@ import {
 } from "@/components/ui/sidebar"
 import { Link } from "react-router-dom"
 
-// Menu items.
+
 const items = [
   {
-    title: "Home",
-    url: "/",
+    title: "DASHBOARD",
+    url: "/dashboard",
     icon: Home,
   },
   {
